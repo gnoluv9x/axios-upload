@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload file</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"
+      integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+      input {
+        margin: 0.5rem 1rem;
+        flex-grow: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="file" multiple id="upload" />
+
+    <form action="" id="form">
+      <h2>Setting user info</h2>
+      <label for="firstname">First name</label>
+      <input type="text" name="firstname" />
+      <br />
+      <label for="lastname">Last name</label>
+      <input type="text" name="lastname" />
+      <br />
+      <label for="avatar">Avatar</label>
+      <input type="file" name="avatar" id="avatar" />
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <script src="./static/index.js"></script>
+  </body>
+</html>
